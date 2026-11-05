@@ -3,44 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog Personal de Gaia sobre Cuidado Facial">
-    <title> Contacto | Blog de Gaia</title>
-
+    <meta name="description" content="Página de contacto del Blog de Gaia. Envía tus consultas sobre cuidado facial y skincare.">
+    <title>Contacto | Blog de Gaia</title>
 </head>
 <body>
     <header>
-        <h1> Blog de Gaia</h1>
-        <p> ✨ “Cuida tu piel, resalta tu belleza y recuerda que el amor propio comienza con pequeños rituales.” </p>
+        <h1>Blog de Gaia</h1>
+        <p>✨ “Cuida tu piel, resalta tu belleza y recuerda que el amor propio comienza con pequeños rituales.”</p>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="articulo-1.html">Articulo 1</a></li>
                 <li><a href="articulo-2.html">Articulo 2</a></li>
-                <li><a href="sobre mi.html">Sobre mi</a></li>
+                <li><a href="sobre-mi.html">Sobre mi</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Últimas publicaciones</h2>
-            <article>
-                <h3> Sección de Skincare</h3>
-                <p><time datetime="2026-10-29">29 de Octubre de 2026</time></p>
-                <p>[Resumen de 1 - 2 líneas de artículo 1.]</p>
-                <a href="articulo-1.html">Leer más</a>
-            </article>
-            <article>
-                  <h3> Sección de Cuidados</h3>
-                <p><time datetime="2026-10-22">22 de Octubre de 2026</time></p>
-                <p>[Resumen de 1 - 2 líneas de artículo 2.]</p>
-                <a href="articulo-2html">Leer más</a>
-            </article>
-        </section>
+        <h2>Contacto</h2>
+        <p>¿Tienes una pregunta o una propuesta sobre tu rutina facial? Escríbeme.</p>
+        <form>
+            <p>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+            <p>
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required>
+            </p>
+            <p>
+                <label for="asunto">Asunto:</label><br>
+                <select id="asunto" name="asunto">
+                    <option>Consulta de Skincare</option>
+                    <option>Colaboración</option>
+                    <option>Otro</option>
+                </select>
+            </p>
+            <p>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+            </p>
+            <p><button type="submit">Enviar</button></p>
+        </form>
     </main>
     <footer>
         <p>&copy; 2026 Gaia. Todos los derechos reservados</p>
+        <p>Última actualización: <time datetime="2026-11-05">5 de noviembre de 2026</time></p>
     </footer>
 </body>
-
 </html>
