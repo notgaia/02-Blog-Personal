@@ -17,6 +17,19 @@
     --fuente-texto: "Inter", system-ui, sans-serif;
     --fuente-titulos: "Poppins", system-ui, sans-serif;
 
+
+
+    /*medidas */
+
+    --ancho-contenido: 960px;
+
+
+    /*tarjetas*/
+    --radio:15px;
+    --sombra: 0 2px 8px rgba (0,0,0,0.8);
+    --sombra-fuerte: 0 8px 20px rgba (0, 0, 0, 0.8);
+
+
 }
 
 
@@ -125,4 +138,63 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
     text-decoration: none;
+}
+
+nav a.activo {
+    background-color: #fff;
+    color: var(--color-primario);
+}
+
+/*tarjetas*/
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 1.5rem;
+}
+
+.tarjeta{
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--sombra);
+    box-shadow: var(--sombra);
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta h3{
+    margin-top: 0;
+}
+
+.tarjeta time {
+    color: var(--color-texto-suave);
+    font-size: 0.875rem;
+}
+
+.tarjeta:hover{
+    transform: translateY(-4px);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.tarjeta .boton{
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--color-primario);
+    color:#dd2d4a;
+    padding: 0.6rem 1.25rem;
+    border-radius: 999px;
+    transition: background-color 0.2s;
+}
+
+.boton:hover{
+    background-color: var(--color-primario-oscuro);
+    color: #fff;
+    text-decoration: none;
+    
 }
